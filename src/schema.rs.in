@@ -1,0 +1,14 @@
+#[derive(Serialize, Deserialize, Debug, PartialEq)]
+pub struct User {
+    pub name: String,
+    pub age: i8,
+}
+
+impl User {
+    pub fn new() -> User {
+        User {
+            name: "testing".to_string(),
+            age: 99,
+        }
+    }
+}

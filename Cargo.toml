@@ -1,0 +1,14 @@
+[package]
+name = "r_b_i_e"
+version = "0.1.0"
+authors = ["selfup <boudinot.regis@yahoo.com>"]
+build = "build.rs"
+
+[dependencies]
+iron = "*"
+serde = "0.7.11"
+serde_json = "0.7.4"
+rust_bucket = { git = "https://github.com/pindell-matt/rust_bucket.git" }
+
+[build-dependencies]
+serde_codegen = "0.7.11"
