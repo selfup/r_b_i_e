@@ -7,7 +7,7 @@ pub struct User {
 impl User {
     pub fn new() -> User {
         User {
-            name: "testing".to_string(),
+            name: "initial name".to_string(),
             age: 99,
         }
     }
