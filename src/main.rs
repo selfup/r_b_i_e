@@ -16,13 +16,9 @@ fn main() {
     println!("{}\n\n", create_and_read_table("first_user"));
 
     for i in 1..101 {
-        let mut records = get_table_records("first_user");
-       
-        let new_id = format!("{}", data.next_id + 1);
-        
-        data.records.insert(format!("{}", i), t);
-        
-        data.next_id = new_id.to_string();
+       let mut looped_user = User::new();
+       looped_user.name = format!("my_number_is{}", i);
+       append_records("first_user", looped_user).unwrap();
     }
     
     println!("{}\n\n", create_and_read_table("first_user"));
